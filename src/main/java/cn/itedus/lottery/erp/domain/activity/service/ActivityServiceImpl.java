@@ -18,7 +18,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ActivityServiceImpl implements IActivityService {
 
-    @DubboReference(interfaceClass = ILotteryActivityDeploy.class, url = "dubbo://127.0.0.1:20880")
+    @DubboReference(interfaceClass = ILotteryActivityDeploy.class)
     private ILotteryActivityDeploy activityDeploy;
 
     @Override

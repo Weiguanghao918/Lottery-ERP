@@ -1,5 +1,6 @@
 package cn.itedus.lottery.erp;
 
+import com.alibaba.nacos.spring.context.annotation.discovery.EnableNacosDiscovery;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -11,6 +12,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  * @description: 抽奖系统ERP Application
  */
 @SpringBootApplication
+@EnableNacosDiscovery
 public class LotteryErpApplication extends SpringBootServletInitializer {
 
     @Override
